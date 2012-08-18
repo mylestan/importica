@@ -38,22 +38,21 @@ layout: default
             {% include JB/pages_list %}
           </ul>
           <ul class="nav pull-right">
-            <li><p class="navbar-text">Contact</p></li> <!-- right-aligned contact button -->
+            <li id="fat-menu" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact</a>
+              <ul class="dropdown-menu">
+                <h4>Maria McGuckian</h4>
+                <h5>+001 416 123 4567</h5>
+                <h5>maria.mcguckian@gmail.com</h5>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
     </div>
 
     <div class="container">
-
-      <!-- span12 row for content -->
-      <div class="row">
-        <div class="span12">
-          <div class="content">
-            {{ content }}
-          </div>
-        </div>
-      </div>
+      {{content}}
 
       <!-- footer for the site -->
       <footer class="footer">
@@ -66,5 +65,18 @@ layout: default
     </div> <!-- /container -->
 
     {% include JB/analytics %}
+    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/bootstrap-transition.js"></script>
+    <script src="/assets/js/bootstrap-alert.js"></script>
+    <script src="/assets/js/bootstrap-modal.js"></script>
+    <script src="/assets/js/bootstrap-dropdown.js"></script>
+    <script src="/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="/assets/js/bootstrap-tab.js"></script>
+    <script src="/assets/js/bootstrap-tooltip.js"></script>
+    <script src="/assets/js/bootstrap-popover.js"></script>
+    <script src="/assets/js/bootstrap-button.js"></script>
+    <script src="/assets/js/bootstrap-collapse.js"></script>
+    <script src="/assets/js/bootstrap-carousel.js"></script>
+    <script src="/assets/js/bootstrap-typeahead.js"></script> 
   </body>
 </html>
