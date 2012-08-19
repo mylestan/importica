@@ -6,3 +6,4 @@ http://username.github.com/maria.html
 http://username.github.com/sitemap.txt
 
 http://username.github.com/lessons/2011/12/29/jekyll-introduction
+http://username.github.com/lessons/2011/12/29/Artist-1

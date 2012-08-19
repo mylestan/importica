@@ -1,20 +1,45 @@
 ---
 layout: default
 ---
-
-<!-- posts have a title...maybe? -->
-<div class="page-header">
-  <h1>{{ page.title }} <small>Supporting tagline</small></h1>
-</div>
-
 <div class="row">
-  <div class="span12">
     <div class="span4">
-      <p>text</p>
-      {% comment %} {{content}} {% endcomment %}
+      <div class="row">
+        <div class="span4">
+          <h3>{{page.title}}</h3> <!-- need this to be dynamic -->
+          <p>{{content}}</p> <!-- needs to be dynamic -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="span4">
+          <img src="http://placehold.it/50x50">
+          <img src="http://placehold.it/50x50">
+          <img src="http://placehold.it/50x50">
+          <img src="http://placehold.it/50x50">
+          <img src="http://placehold.it/50x50">
+          <img src="http://placehold.it/50x50">
+          <img src="http://placehold.it/50x50">
+          <img src="http://placehold.it/50x50">
+          <img src="http://placehold.it/50x50">
+        </div>
+      </div>
     </div>
     <div class="span8">
-      <!-- image stuff -->
+      <div id="Carousel" class="carousel slide">
+        <!--  Carousel items -->
+        <div class="carousel-inner">
+            <div class="active item">
+              <img src="http://placehold.it/800x500/AACCEE">
+            </div>
+            <div class="item">
+              <img src="http://placehold.it/800x500/CCEEAA">
+            </div>
+            <div class="item">
+              <img src="http://placehold.it/800x500/EEAACC">
+            </div>
+          </div>
+        <!-- carousel nav -->
+        <a class="carousel-control left" href="#Carousel" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#Carousel" data-slide="next">&rsaquo;</a>
+      </div> <!-- end carousel -->
     </div>
-  </div>
 </div>
