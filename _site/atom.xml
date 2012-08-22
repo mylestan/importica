@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>importica</title>
- <link href="importica/atom.xml" rel="self"/>
- <link href="importica"/>
- <updated>2012-08-22T18:41:25-04:00</updated>
- <id>importica</id>
+ <title></title>
+ <link href="/atom.xml" rel="self"/>
+ <link href=""/>
+ <updated>2012-08-22T19:05:07-04:00</updated>
+ <id></id>
  <author>
-   <name>Maria McGuckian</name>
-   <email>Maria.McGuckian@gmail.com</email>
+   <name></name>
+   <email></email>
  </author>
 
  
  <entry>
    <title>Jekyll Introduction</title>
-   <link href="importica/lessons/2011/12/29/jekyll-introduction"/>
+   <link href="/lessons/2011/12/29/jekyll-introduction.html"/>
    <updated>2011-12-29T00:00:00-05:00</updated>
-   <id>importica/lessons/2011/12/29/jekyll-introduction</id>
+   <id>/lessons/2011/12/29/jekyll-introduction</id>
    <content type="html">&lt;p&gt;This is text about Maria&amp;#8217;s website&lt;/p&gt;</content>
  </entry>
  
  <entry>
    <title>Artist 1</title>
-   <link href="importica/lessons/2011/12/29/Artist-1"/>
+   <link href="/lessons/2011/12/29/Artist-1.html"/>
    <updated>2011-12-29T00:00:00-05:00</updated>
-   <id>importica/lessons/2011/12/29/Artist-1</id>
+   <id>/lessons/2011/12/29/Artist-1</id>
    <content type="html">&lt;p&gt;This is some text about artist 1. He&amp;#8217;s a great guy.&lt;/p&gt;</content>
  </entry>
  
