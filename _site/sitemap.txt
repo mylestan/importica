@@ -1,9 +1,9 @@
 
-/artists.html
-/atom.xml
-/index.html
-/maria.html
-/sitemap.txt
+http://mylestan.github.com/importica/artists.html
+http://mylestan.github.com/importica/atom.xml
+http://mylestan.github.com/importica/index.html
+http://mylestan.github.com/importica/maria.html
+http://mylestan.github.com/importica/sitemap.txt
 
-/lessons/2011/12/29/jekyll-introduction.html
-/lessons/2011/12/29/Artist-1.html
+http://mylestan.github.com/importica/lessons/2011/12/29/jekyll-introduction
+http://mylestan.github.com/importica/lessons/2011/12/29/Artist-1

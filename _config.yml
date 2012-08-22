@@ -11,8 +11,8 @@ pygments: true
 #
 title : importica
 tagline: 
-author : Maria McGuckian
-  name : Maria McGuckian
+author : 
+  name : 'Maria McGuckian'
   email : Maria.McGuckian@gmail.com
 
 # The production_url is only used when full-domain names are needed
