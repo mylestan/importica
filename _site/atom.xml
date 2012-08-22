@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>importica</title>
- <link href="http://username.github.com/atom.xml" rel="self"/>
- <link href="http://username.github.com"/>
- <updated>2012-08-19T13:44:58-04:00</updated>
- <id>http://username.github.com</id>
+ <link href="http://mylestan.com/importica/atom.xml" rel="self"/>
+ <link href="http://mylestan.com/importica"/>
+ <updated>2012-08-22T17:16:33-04:00</updated>
+ <id>http://mylestan.com/importica</id>
  <author>
    <name>Maria McGuckian</name>
    <email>Maria.McGuckian@gmail.com</email>
@@ -14,17 +14,17 @@
  
  <entry>
    <title>Jekyll Introduction</title>
-   <link href="http://username.github.com/lessons/2011/12/29/jekyll-introduction"/>
+   <link href="http://mylestan.com/importica/lessons/2011/12/29/jekyll-introduction"/>
    <updated>2011-12-29T00:00:00-05:00</updated>
-   <id>http://username.github.com/lessons/2011/12/29/jekyll-introduction</id>
+   <id>http://mylestan.com/importica/lessons/2011/12/29/jekyll-introduction</id>
    <content type="html">&lt;p&gt;This is text about Maria&amp;#8217;s website&lt;/p&gt;</content>
  </entry>
  
  <entry>
    <title>Artist 1</title>
-   <link href="http://username.github.com/lessons/2011/12/29/Artist-1"/>
+   <link href="http://mylestan.com/importica/lessons/2011/12/29/Artist-1"/>
    <updated>2011-12-29T00:00:00-05:00</updated>
-   <id>http://username.github.com/lessons/2011/12/29/Artist-1</id>
+   <id>http://mylestan.com/importica/lessons/2011/12/29/Artist-1</id>
    <content type="html">&lt;p&gt;This is some text about artist 1. He&amp;#8217;s a great guy.&lt;/p&gt;</content>
  </entry>
  
