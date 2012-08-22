@@ -1,9 +1,9 @@
 
-http://mylestan.com/importica/artists.html
-http://mylestan.com/importica/atom.xml
-http://mylestan.com/importica/index.html
-http://mylestan.com/importica/maria.html
-http://mylestan.com/importica/sitemap.txt
+importica/artists.html
+importica/atom.xml
+importica/index.html
+importica/maria.html
+importica/sitemap.txt
 
-http://mylestan.com/importica/lessons/2011/12/29/jekyll-introduction
-http://mylestan.com/importica/lessons/2011/12/29/Artist-1
+importica/lessons/2011/12/29/jekyll-introduction
+importica/lessons/2011/12/29/Artist-1
