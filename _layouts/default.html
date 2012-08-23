@@ -15,27 +15,16 @@
 
     <!-- Le styles -->
     <link href="{{ BASE_PATH }}/{{ ASSET_PATH }}/css/bootstrap.css" rel="stylesheet">
+    <link href="{{ BASE_PATH }}/{{ ASSET_PATH }}/css/style.css" rel="stylesheet">
     <style>
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
       }
     </style>
 
-    <!-- scripts -->
+    <!-- scripts, need to load two first because others rely on them. -->
     {% include JB/analytics %}
     <script src="{{ BASE_PATH }}/{{ ASSET_PATH }}/js/jquery.js"></script>
-    <script src="{{ BASE_PATH }}/{{ ASSET_PATH }}/js/bootstrap-transition.js"></script>
-    <script src="{{ BASE_PATH }}/{{ ASSET_PATH }}/js/bootstrap-alert.js"></script>
-    <script src="{{ BASE_PATH }}/{{ ASSET_PATH }}/js/bootstrap-modal.js"></script>
-    <script src="{{ BASE_PATH }}/{{ ASSET_PATH }}/js/bootstrap-dropdown.js"></script>
-    <script src="{{ BASE_PATH }}/{{ ASSET_PATH }}/js/bootstrap-scrollspy.js"></script>
-    <script src="{{ BASE_PATH }}/{{ ASSET_PATH }}/js/bootstrap-tab.js"></script>
-    <script src="{{ BASE_PATH }}/{{ ASSET_PATH }}/js/bootstrap-tooltip.js"></script>
-    <script src="{{ BASE_PATH }}/{{ ASSET_PATH }}/js/bootstrap-popover.js"></script>
-    <script src="{{ BASE_PATH }}/{{ ASSET_PATH }}/js/bootstrap-button.js"></script>
-    <script src="{{ BASE_PATH }}/{{ ASSET_PATH }}/js/bootstrap-collapse.js"></script>
-    <script src="{{ BASE_PATH }}/{{ ASSET_PATH }}/js/bootstrap-carousel.js"></script>
-    <script src="{{ BASE_PATH }}/{{ ASSET_PATH }}/js/bootstrap-typeahead.js"></script> 
     <script src="{{ BASE_PATH }}/{{ ASSET_PATH }}/js/post.js"></script>
   </head>
 
@@ -78,5 +67,19 @@
       </footer>
 
     </div> <!-- /container -->
+
+    <!-- load rest of scripts here -->
+    <script src="{{ BASE_PATH }}/{{ ASSET_PATH }}/js/bootstrap-transition.js"></script>
+    <script src="{{ BASE_PATH }}/{{ ASSET_PATH }}/js/bootstrap-alert.js"></script>
+    <script src="{{ BASE_PATH }}/{{ ASSET_PATH }}/js/bootstrap-modal.js"></script>
+    <script src="{{ BASE_PATH }}/{{ ASSET_PATH }}/js/bootstrap-dropdown.js"></script>
+    <script src="{{ BASE_PATH }}/{{ ASSET_PATH }}/js/bootstrap-scrollspy.js"></script>
+    <script src="{{ BASE_PATH }}/{{ ASSET_PATH }}/js/bootstrap-tab.js"></script>
+    <script src="{{ BASE_PATH }}/{{ ASSET_PATH }}/js/bootstrap-tooltip.js"></script>
+    <script src="{{ BASE_PATH }}/{{ ASSET_PATH }}/js/bootstrap-popover.js"></script>
+    <script src="{{ BASE_PATH }}/{{ ASSET_PATH }}/js/bootstrap-button.js"></script>
+    <script src="{{ BASE_PATH }}/{{ ASSET_PATH }}/js/bootstrap-collapse.js"></script>
+    <script src="{{ BASE_PATH }}/{{ ASSET_PATH }}/js/bootstrap-carousel.js"></script>
+    <script src="{{ BASE_PATH }}/{{ ASSET_PATH }}/js/bootstrap-typeahead.js"></script> 
   </body>
 </html>

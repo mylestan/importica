@@ -18,28 +18,18 @@ layout: default
       </div>
     </div>
     <div class="span9">
-      <div id="Carousel" class="carousel slide">
-        <!--  Carousel items -->
-        <div class="carousel-inner">
-            <div class="active item">
-              <img src="http://placehold.it/800x500/AACCEE">
-            </div>
-            <div class="item">
-              <img src="http://placehold.it/800x500/CCEEAA">
-            </div>
-            <div class="item">
-              <img src="http://placehold.it/800x500/EEAACC">
-            </div>
-          </div>
-        <!-- carousel nav -->
-        <a class="carousel-control left" href="#Carousel" data-slide="prev">&lsaquo;</a>
-        <a class="carousel-control right" href="#Carousel" data-slide="next">&rsaquo;</a>
-      </div> <!-- end carousel -->
+      <div id="preview-pane">
+        <img src="{{ BASE_PATH }}/{{ ASSET_PATH }}/images{{ page.id }}/1.jpg" id="preview-image">
+      </div>
     </div>
 </div>
 
 <script>
   $(document).ready(function() {
     createThumbnails( "{{ BASE_PATH }}/{{ ASSET_PATH }}/images{{ page.id }}" , 1 );
+  });
+
+  $('#thumbnails').delegate('img', 'click', function() {
+    $('#preview-image').attr('src', $(this).attr('src'));
   });
 </script>

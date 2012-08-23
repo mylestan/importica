@@ -1,5 +1,3 @@
-
-
 function createThumbnails(imgSrc, i){
 	//variables
 	var image = new Image();
