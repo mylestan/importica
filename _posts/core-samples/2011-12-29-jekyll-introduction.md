@@ -1,7 +1,0 @@
----
-layout: post
-category : lessons
-tags : [intro, beginner, jekyll, tutorial]
----
-
-This is text about Maria's website

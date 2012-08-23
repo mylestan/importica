@@ -4,7 +4,7 @@
  <title>importica</title>
  <link href="http://mylestan.github.com/importica/atom.xml" rel="self"/>
  <link href="http://mylestan.github.com/importica"/>
- <updated>2012-08-22T19:57:53-04:00</updated>
+ <updated>2012-08-23T13:12:11-04:00</updated>
  <id>http://mylestan.github.com/importica</id>
  <author>
    <name>Maria McGuckian</name>
@@ -13,18 +13,10 @@
 
  
  <entry>
-   <title>Jekyll Introduction</title>
-   <link href="http://mylestan.github.com/importica/lessons/2011/12/29/jekyll-introduction"/>
-   <updated>2011-12-29T00:00:00-05:00</updated>
-   <id>http://mylestan.github.com/importica/lessons/2011/12/29/jekyll-introduction</id>
-   <content type="html">&lt;p&gt;This is text about Maria&amp;#8217;s website&lt;/p&gt;</content>
- </entry>
- 
- <entry>
    <title>Artist 1</title>
-   <link href="http://mylestan.github.com/importica/lessons/2011/12/29/Artist-1"/>
-   <updated>2011-12-29T00:00:00-05:00</updated>
-   <id>http://mylestan.github.com/importica/lessons/2011/12/29/Artist-1</id>
+   <link href="http://mylestan.github.com/importica/lessons/2012/08/23/Artist-1"/>
+   <updated>2012-08-23T00:00:00-04:00</updated>
+   <id>http://mylestan.github.com/importica/lessons/2012/08/23/Artist-1</id>
    <content type="html">&lt;p&gt;This is some text about artist 1. He&amp;#8217;s a great guy.&lt;/p&gt;</content>
  </entry>
  

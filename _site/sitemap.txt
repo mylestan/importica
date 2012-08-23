@@ -5,5 +5,4 @@ http://mylestan.github.com/importica/index.html
 http://mylestan.github.com/importica/maria.html
 http://mylestan.github.com/importica/sitemap.txt
 
-http://mylestan.github.com/importica/lessons/2011/12/29/jekyll-introduction
-http://mylestan.github.com/importica/lessons/2011/12/29/Artist-1
+http://mylestan.github.com/importica/lessons/2012/08/23/Artist-1
