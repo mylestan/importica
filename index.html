@@ -11,10 +11,17 @@ layout: page
 			    <div class="item" id="{{ forloop.index }}">
 			    	<a href="{{ BASE_PATH }}{{ post.url }}/index.html"><img src="{{ BASE_PATH }}/{{ ASSET_PATH}}/images{{ post.url }}/1.jpg"></a>
 			    	<div class="carousel-caption">
-			    		<h4>{{ post.title }}</h4>
+			    		<p>{{ post.title }}</p>
 			    	</div>
 			    </div>
+			    {% assign mariaId = forloop.length %}
 			    {% endfor %}
+			    <div class="item" id="{{ mariaId | plus: 1 }}">
+			    	<a href="{{ BASE_PATH }}/maria.html"><img src="{{ BASE_PATH }}/{{ ASSET_PATH }}/images/profile/profile-photo.jpg"></a>
+			    	<div class="carousel-caption">
+			    		<p>About Maria McGuckain, owner of importica.</p>
+			    	</div>
+			    </div>
 		    </div>
 	 		<!-- carousel nav -->
 			<a class="carousel-control left" href="#Carousel" data-slide="prev">&lsaquo;</a>
@@ -31,6 +38,6 @@ layout: page
 
 		//set the first item in the carousel to be the active item
 		$(document).ready( function() {
-			$('#1').attr('class', 'active-item');
+			$('#1').attr('class', 'item active');
 		});
 		</script>
