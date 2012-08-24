@@ -1,32 +1,20 @@
 ---
 layout: page
 ---
+
 {% include JB/setup %}
 
 		<div id="Carousel" class="carousel slide">
 			<!--  Carousel items -->
 			<div class="carousel-inner">
-			    <div class="active item">
-			    	<img src="http://placehold.it/800x500/AACCEE">
+				{% for post in site.posts %}
+			    <div class="item" id="{{ forloop.index }}">
+			    	<a href="{{ BASE_PATH }}{{ post.url }}/index.html"><img src="{{ BASE_PATH }}/{{ ASSET_PATH}}/images{{ post.url }}/1.jpg"></a>
 			    	<div class="carousel-caption">
-			    		<h4>This Artist</h4>
-			    		<p>Makes this kind of art</p>
+			    		<h4>{{ post.title }}</h4>
 			    	</div>
 			    </div>
-			    <div class="item">
-			    	<img src="http://placehold.it/800x500/CCEEAA">
-			    	<div class="carousel-caption">
-			    		<h4>That Artist</h4>
-			    		<p>Makes that kind of art</p>
-			    	</div>
-			    </div>
-			    <div class="item">
-			    	<img src="http://placehold.it/800x500/EEAACC">
-			    	<div class="carousel-caption">
-			    		<h4>Maria McGuckian</h4>
-			    		<p>Art Importer</p>
-			    	</div>
-			    </div>
+			    {% endfor %}
 		    </div>
 	 		<!-- carousel nav -->
 			<a class="carousel-control left" href="#Carousel" data-slide="prev">&lsaquo;</a>
@@ -35,7 +23,14 @@ layout: page
 
 		<!-- scripts necessary for this page -->
 	   	<script type="text/javascript">
+
+	   	//initialize the carousel
 		$(function(){
 		   $('.Carousel').carousel();
+		});
+
+		//set the first item in the carousel to be the active item
+		$(document).ready( function() {
+			$('#1').attr('class', 'active-item');
 		});
 		</script>
