@@ -13,13 +13,12 @@ layout: default
         </div>
       </div>
       <div class="row">
-        <div class="span3" id="thumbnails">
-        </div>
+        <div class="span3" id="thumbnails"></div>
       </div>
     </div>
     <div class="span9">
       <div id="preview-pane">
-        <img src="{{ BASE_PATH }}/{{ ASSET_PATH }}/images{{ page.id }}/1.jpg" id="preview-image">
+        <img src="{{ BASE_PATH }}/{{ ASSET_PATH }}/images{{ page.id }}/1-img.jpg" id="preview-image">
       </div>
     </div>
 </div>
@@ -30,6 +29,6 @@ layout: default
   });
 
   $('#thumbnails').delegate('img', 'click', function() {
-    $('#preview-image').attr('src', $(this).attr('src'));
+    $('#preview-image').attr('src', $(this).attr('src').replace('thumb', 'img'));
   });
 </script>

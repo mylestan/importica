@@ -1,21 +1,22 @@
 function createThumbnails(imgSrc, i){
 	//variables
-	var image = new Image();
-	var imgPath = imgSrc + '/' + i + '.jpg';
+	var thumb = new Image();
+	var thumbPath = imgSrc + '/' + i + '-thumb.jpg';
 
 	//image values
-	image.src = imgPath;
-	image.id = "thumbnail" + i;
+	thumb.src = thumbPath;
+	thumb.id = i;
 
 	//add image to the div
-	$("#thumbnails").append(image);
+	$("#thumbnails").append(thumb);
 
 	//if it loaded correctly, call for next thumbnail
-	$("#" + image.id).load( function() {
+	$("#" + thumb.id).load( function() {
 		createThumbnails(imgSrc, i + 1);
 	});
 
-	$("#" + image.id).error (function() {
-		$("#" + image.id).remove();
+	//if error is thrown (aka doesn't exist), remove element
+	$("#" + thumb.id).error (function() {
+		$("#" + thumb.id).remove();
 	});
 }
