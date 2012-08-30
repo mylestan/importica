@@ -53,6 +53,12 @@ footer p strong {
 	overflow: hidden;
 }
 
-#item{
-	height: 50%;
+/* Sizing of the images on main page */
+
+.item img{
+	height: 600px;
+}
+
+.carousel-inner{
+	background-color: #333;
 }
