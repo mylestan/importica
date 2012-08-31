@@ -53,6 +53,29 @@ footer p strong {
 	overflow: hidden;
 }
 
+/* Interactibility of thumbnail images */
+.thumb, .thumb-active{
+	float: left;
+}
+
+
+.thumb-active img{
+ 	border-style: solid;
+	border-color: #AAA;
+	border-width: 2px;
+ }
+
+.thumb img{
+	border-style: solid;
+	border-width: 2px;
+	border-color: #EEE;
+}
+
+.thumb img:hover{
+	border-color: #DDD;
+	border-width: 2px;
+	border-style: solid;
+}
 /* Sizing of the images on main page */
 
 .item img{

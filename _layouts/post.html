@@ -24,11 +24,20 @@ layout: default
 </div>
 
 <script>
+  //loads thumbnails
   $(document).ready(function() {
     createThumbnails( "{{ BASE_PATH }}/{{ ASSET_PATH }}/images{{ page.id }}" , 1 );
   });
 
+  //handles thumbnail activity
   $('#thumbnails').delegate('img', 'click', function() {
+
+    //changes the preview pane to appropriate image
     $('#preview-image').attr('src', $(this).attr('src').replace('thumb', 'img'));
+
+    //makes the clicked thumbnail the bordered one, removes border from last active thumbnail
+    $('.thumb-active').attr('class', 'thumb');
+    $(this).parent().attr('class', 'thumb-active');
+
   });
 </script>

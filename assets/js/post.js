@@ -7,8 +7,19 @@ function createThumbnails(imgSrc, i){
 	thumb.src = thumbPath;
 	thumb.id = i;
 
+	//making the new div
+	var thumbDiv = document.createElement('div');
+
+	if (i === 1){
+		thumbDiv.setAttribute('class', 'thumb-active');
+	}
+	else{
+		thumbDiv.setAttribute('class', 'thumb');
+	}
+
 	//add image to the div
-	$("#thumbnails").append(thumb);
+	$(thumbDiv).append(thumb);
+	$("#thumbnails").append(thumbDiv);
 
 	//if it loaded correctly, call for next thumbnail
 	$("#" + thumb.id).load( function() {
