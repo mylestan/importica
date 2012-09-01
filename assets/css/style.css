@@ -72,7 +72,7 @@ footer p strong {
  }
 
 .thumb img:hover{
-	border-color: #DDD;
+	border-color: #CCC;
 	border-width: 2px;
 	border-style: solid;
 }
