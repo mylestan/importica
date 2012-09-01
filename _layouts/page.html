@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% if page.title %} <!--index page does not have a title, so we don't show that css stuff for it -->
+{% if page.title %} <!-- A way of not showing title on home page: no title is assigned on home page -->
 	<div class="page-header">
 	  <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1> <!-- show a title for the section -->
 	</div>

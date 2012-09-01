@@ -29,12 +29,18 @@
     <div class="navbar">
       <div class="navbar-inner">
         <div class="container">
+
+          <!-- home link -->
           <a class="brand" href="{{ BASE_PATH }}/index.html">{{ site.title }}</a>
+
+          <!-- for each page in the 'navigation' group, it creates a link using the pages' title -->
           <ul class="nav">
             {% assign pages_list = site.pages %}
             {% assign group = 'navigation' %}
             {% include JB/pages_list %}
           </ul>
+
+          <!-- dropdown for Maria's contact info -->
           <ul class="nav pull-right">
             <li id="fat-menu" class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact</a>
@@ -47,13 +53,12 @@
           </ul>
         </div>
       </div>
-    </div>
+    </div> <!-- end navbar -->
 
     <!-- main content -->
     <div class="container" id="main">
       {{content}}
-
-    </div> <!-- /container -->
+    </div>
 
     <!-- footer for the site -->
     <footer class="footer">

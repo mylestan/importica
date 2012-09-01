@@ -1,7 +1,7 @@
 ---
 layout: page
 ---
-
+<!-- runs through and makes all magic jekyll changes -->
 {% include JB/setup %}
 
 		<div id="Carousel" class="carousel slide">
@@ -9,18 +9,15 @@ layout: page
 			<div class="carousel-inner">
 				{% for post in site.posts %}
 			    <div class="item" id="{{ forloop.index }}">
-			    	<a href="{{ BASE_PATH }}{{ post.url }}/index.html"><img src="{{ BASE_PATH }}/{{ ASSET_PATH}}/images{{ post.url }}/1-img.jpg"></a>
-			    	<div class="carousel-caption">
-			    		<p>{{ post.title }}</p>
+			    	<div class="inline"> <!-- for image centering -->
+			    		<a href="{{ BASE_PATH }}{{ post.url }}/index.html"><img src="{{ BASE_PATH }}/{{ ASSET_PATH}}/images{{ post.url }}/1-img.jpg"></a>
 			    	</div>
 			    </div>
-			    {% assign mariaId = forloop.length %}
+			    {% assign mariaId = forloop.length %} <!-- gives us last id number so we can append maria's image -->
 			    {% endfor %}
+			    <!-- Manually enter Maria's page piece -->
 			    <div class="item" id="{{ mariaId | plus: 1 }}">
 			    	<a href="{{ BASE_PATH }}/maria.html"><img src="{{ BASE_PATH }}/{{ ASSET_PATH }}/images/profile/profile-photo.jpg"></a>
-			    	<div class="carousel-caption">
-			    		<p>About Maria McGuckain, owner of importica.</p>
-			    	</div>
 			    </div>
 		    </div>
 	 		<!-- carousel nav -->
@@ -30,14 +27,15 @@ layout: page
 
 		<!-- scripts necessary for this page -->
 	   	<script type="text/javascript">
+	   	
+		   	//initialize the carousel
+			$(function(){
+			   $('.Carousel').carousel(
+			   	);
+			});
 
-	   	//initialize the carousel
-		$(function(){
-		   $('.Carousel').carousel();
-		});
-
-		//set the first item in the carousel to be the active item
-		$(document).ready( function() {
-			$('#1').attr('class', 'item active');
-		});
+			//set the first item in the carousel to be the active item
+			$(document).ready( function() {
+				$('#1').attr('class', 'item active');
+			});
 		</script>

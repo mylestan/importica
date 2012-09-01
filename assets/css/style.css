@@ -1,10 +1,10 @@
-/* Override some defaults */
+/* Override some defaults. */
 html, body {
   height: 100%;
   background-color: #eee;
 }
 
-/* making navbar look good */
+/* Making navbar look good. */
 .navbar {
   margin-bottom: 0;
 }
@@ -13,7 +13,7 @@ html, body {
 	padding-top: 40px;
 }
 
-/* cleaning up the footer */
+/* Cleaning up the footer, customizing it. */
 footer {
   margin-top: 20px;
   padding-top: 5px;
@@ -24,6 +24,7 @@ footer {
   border-top-width:  1px;
   border-top-style: solid;
 }
+
 footer p {
   color: #BBB;
   font-size: 10px;
@@ -34,7 +35,7 @@ footer p strong {
 	float: right;
 }
 
-/* Contact dropwdown overrides*/
+/* Contact info dropwdown overrides. */
 .dropdown-menu{
 	padding-left: 20px;
 	padding-right: 40px;
@@ -46,24 +47,17 @@ footer p strong {
 	padding-bottom: 5px;
 }
 
-/*properly sizing thumbnail images*/
+/* Properly sizing thumbnail images. */
 #thumbnails img{
 	width: 50px;
 	height: 50px;
 	overflow: hidden;
 }
 
-/* Interactibility of thumbnail images */
+/* Interactibility of thumbnail images. */
 .thumb, .thumb-active{
 	float: left;
 }
-
-
-.thumb-active img{
- 	border-style: solid;
-	border-color: #AAA;
-	border-width: 2px;
- }
 
 .thumb img{
 	border-style: solid;
@@ -71,17 +65,24 @@ footer p strong {
 	border-color: #EEE;
 }
 
+.thumb-active img{
+ 	border-style: solid;
+	border-color: #AAA;
+	border-width: 2px;
+ }
+
 .thumb img:hover{
 	border-color: #DDD;
 	border-width: 2px;
 	border-style: solid;
 }
-/* Sizing of the images on main page */
 
-.item img{
-	height: 600px;
+/* Align images in the Carousel */
+.item{
+	text-align: center;
 }
 
-.carousel-inner{
-	background-color: #333;
+/* Sizing of the images on main page */
+.item img{
+	height: 600px;
 }
