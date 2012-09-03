@@ -86,3 +86,11 @@ footer p strong {
 .item img{
 	height: 600px;
 }
+
+/* Overriding default thumbnail color on hover */
+a.thumbnail:hover {
+  border-color: #888;
+  -webkit-box-shadow: 0 1px 4px rgba(80, 80, 80, 0.25);
+     -moz-box-shadow: 0 1px 4px rgba(80, 80, 80, 0.25);
+          box-shadow: 0 1px 4px rgba(80, 80, 80, 0.25);
+}
