@@ -4,7 +4,7 @@ layout: page
 <!-- runs through and makes all magic jekyll changes -->
 {% include JB/setup %}
 
-		<div id="Carousel" class="carousel slide">
+		<div id="myCarousel" class="carousel slide">
 			<!--  Carousel items -->
 			<div class="carousel-inner">
 				{% for post in site.posts %}
@@ -21,21 +21,16 @@ layout: page
 			    </div>
 		    </div>
 	 		<!-- carousel nav -->
-			<a class="carousel-control left" href="#Carousel" data-slide="prev">&lsaquo;</a>
-			<a class="carousel-control right" href="#Carousel" data-slide="next">&rsaquo;</a>
+			<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+			<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 		</div>
 
 		<!-- scripts necessary for this page -->
-	   	<script type="text/javascript">
-	   	
+	   	<script type="text/javascript">	   	
 		   	//initialize the carousel
-			$(function(){
-			   $('.Carousel').carousel(
-			   	);
-			});
-
-			//set the first item in the carousel to be the active item
-			$(document).ready( function() {
+		   	$(document).ready(function(){
 				$('#1').attr('class', 'item active');
-			});
+			   	$('#myCarousel').carousel();		   		
+			   });
+
 		</script>

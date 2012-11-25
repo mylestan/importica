@@ -16,11 +16,6 @@
     <!-- Le styles -->
     <link href="/assets/css/bootstrap.css" rel="stylesheet">
     <link href="/assets/css/style.css" rel="stylesheet">
-    <style>
-      body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
-    </style>
 
     <!-- scripts, need to load two first because others rely on them. -->
     
@@ -31,10 +26,14 @@
   <body>
 
     <!-- navbar for the site -->
-    <div class="navbar navbar-fixed-top">
+    <div class="navbar">
       <div class="navbar-inner">
         <div class="container">
+
+          <!-- home link -->
           <a class="brand" href="/index.html">importica</a>
+
+          <!-- for each page in the 'navigation' group, it creates a link using the pages' title -->
           <ul class="nav">
             
             
@@ -72,23 +71,25 @@
 
 
           </ul>
+
+          <!-- dropdown for Maria's contact info -->
           <ul class="nav pull-right">
             <li id="fat-menu" class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact</a>
               <ul class="dropdown-menu">
                 <h4>Maria McGuckian</h4>
-                <h5>+001 416 123 4567</h5>
-                <h5>maria.mcguckian@gmail.com</h5>
+                <h5>+1 (905) 883 4316</h5>
+                <h5>maria.mcguckiansmith@gmail.com</h5>
               </ul>
             </li>
           </ul>
         </div>
       </div>
-    </div>
+    </div> <!-- end navbar -->
 
     <!-- main content -->
-    <div class="container">
-       <!--index page does not have a title, so we don't show that css stuff for it -->
+    <div class="container" id="main">
+       <!-- A way of not showing title on home page: no title is assigned on home page -->
 	<div class="page-header">
 	  <h1>About Maria </h1> <!-- show a title for the section -->
 	</div>
@@ -97,31 +98,26 @@
 
 
 <div class="row">
-	<div class="span8">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+	<div class="span8"> <!-- text about Maria -->
+		<p>Discovering Art has been a passion of mine since traveling to several destinations around the world and bringing art home to share with others. There are many true artists that bring shape, form and colour in a unique way that opens your home & office to the world of ‘Imported’ Art.</p>
+		<p>Each piece is worked on by dedicated and extremely talented artists from around the world, and brings a story to every piece that you can proudly share with friends, families and clients alike.</p>
 	</div>
-	<div class="span4">
+	<div class="span4"> <!-- Maria's picture -->
 		<ul class="thumbnails">
 			<li class="span4">
-				<a href="#" class="thumbnail">
-					<img src="http://placehold.it/300x200">
-				</a>
+				<img src="/assets/images/profile/profile-photo.jpg" alt="Maria">
 			</li>
 		</ul>
 	</div>
 </div>
 
+    </div>
 
-      <!-- footer for the site -->
-      <footer class="footer">
-        <p>&copy; Maria McGuckian 2012 
-          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
-        </p>
-      </footer>
-
-    </div> <!-- /container -->
+    <!-- footer for the site -->
+    <footer class="footer">
+      <p>&copy; Maria McGuckian 2012 <strong> +1 (905) 883 4316 | maria.mcguckiansmith@gmail.com | Toronto, Canada |</strong>
+      </p>
+    </footer>
 
     <!-- load rest of scripts here -->
     <script src="/assets/js/bootstrap-transition.js"></script>
