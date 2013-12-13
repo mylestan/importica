@@ -1,8 +1,0 @@
-
-http://mylestan.github.com/importica/artists.html
-http://mylestan.github.com/importica/atom.xml
-http://mylestan.github.com/importica/index.html
-http://mylestan.github.com/importica/maria.html
-http://mylestan.github.com/importica/sitemap.txt
-
-http://mylestan.github.com/importica/lessons/2012/08/23/Artist-1
